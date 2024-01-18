@@ -58,9 +58,9 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="lg:text-base">BIG SIX</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-sm lg:text-base">BIG SIX</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-full  gap-1 p-2  md:grid-cols-1 lg:w-[150px] ">
+            <ul className="grid w-full bg-background gap-1 p-2 md:grid-cols-1 lg:w-[150px] ">
               {components.map((component) => (
                 <ListItem
                   key={component.title}
@@ -88,12 +88,12 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors  hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
             className
           )}
           {...props}
         >
-          <div className="text-xs font-medium leading-none lg:text-sm">{title}</div>
+          <div className="text-xs font-medium leading-none lg:text-xs">{title}</div>
           <p className="line-clamp-2 text-xs leading-snug text-muted-foreground">
             {children}
           </p>
