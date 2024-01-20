@@ -18,38 +18,38 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "ARSENAL",
-    href: "/docs/primitives/alert-dialog",
+    href: "/arsenal",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Arsenal",
   },
   {
     title: "CHELSEA",
-    href: "/docs/primitives/hover-card",
+    href: "/chelsea",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Chelsea",
   },
   {
     title: "LIVERPOOL",
-    href: "/docs/primitives/progress",
+    href: "/liverpool",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Liverpool",
   },
   {
     title: "MAN CITY",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    href: "/mancity",
+    description: "Manchester city",
   },
   {
     title: "MAN UNITED",
-    href: "/docs/primitives/tabs",
+    href: "/manunited",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "Manchester united",
   },
   {
     title: "TOTTENHAM",
-    href: "/docs/primitives/tooltip",
+    href: "/tottenham",
     description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "Tottenham",
   },
 ]
 

@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from "@/components/ui/theme-provider"
+import { ModeToggle } from '@/components/ui/ModeToggle'
+import NavBarComponent from '@/components/ui/NavBarComponent'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +27,15 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <main className="flex  min-h-screen flex-col items-center justify-arround p-12 lg:p-8 ">
+              <NavBarComponent/>
+              {children}
+        
+              <div className='w-full flex items-end justify-end'>
+                <ModeToggle/>
+              </div>
+      
+            </main>
         </ThemeProvider>
       </body>
     </html>
