@@ -26,6 +26,7 @@ export default async function Arsenal() {
           </div>
         })
       } */}
+      <h4>{filterClubArsenal.name}</h4>
       <p>{filterClubArsenal.name}</p>
     </>
   )
