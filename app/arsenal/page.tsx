@@ -12,22 +12,24 @@ export default async function Arsenal() {
     //   name: string
     // }
 
-    const filterClubArsenal:any = data.squad.filter((club: { id: number; }) => club.id === 57);
+    // const filterClubArsenal:any = data.runningCompetitions.filter((club: { id: number; }) => club.id === 57);
     // const pathName = usePathname()
 
   return (
     <>
-        <h2> ARSENAL</h2>
+        <h2 className='mb-9 text-2xl '> ARSENAL</h2>
         {/* <p>{filterClubArsenal}</p> */}
-        {/* {
-        filterClubArsenal.map((index:any,club:any)=>{
-          <div key={index}>
-            <p className='text-xs'>{club.a.name}</p>
+        {
+        data.squad.map((club:any)=>(
+          <div key={club.id}>
+            <p className='text-base'>{club.name}</p>
           </div>
-        })
-      } */}
-      <h4>{filterClubArsenal.name}</h4>
-      <p>{filterClubArsenal.name}</p>
+        ))
+      }
+      <h4>{data.name}</h4>
+    
+      {/* {JSON.stringify(data.squad)} */}
+      {/* <p>{filterClubArsenal.name}</p> */}
     </>
   )
 }
